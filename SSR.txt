@@ -1,0 +1,14 @@
+4. How you implement Server-Side Rendering or SSR?
+
+Using Express.js, the configuration steps are along the following lines:
+
+1. Create a new folder for the React app.
+2. Install the dependencies like Babel.
+3. Configure the dependencies installed and set up the packages used by the server.
+4. Move all the code to the client directory and create a server directory.
+5. Create a basic server code with express.
+6. Transpile all the code
+7. Test the server code.
+8. Configure webpack or any module bundler.
+9. Build the code.
+10. Test and debug.

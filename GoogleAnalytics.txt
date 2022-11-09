@@ -1,0 +1,11 @@
+8.	How to add Google Analytics for React Router?
+  
+    1- install dependencies react-ga
+    2- we need our tracking id from the account on analytics.google.com lets called IdTracker
+    3- initialize the tracking with ReactGA.initialize(IdTracker)
+    4- we called inside the useEffect hook : 
+    {
+        useEffect(() => {
+            ReactGA.pageview(window.location.pathname + window.location.search);
+        }, []);
+    }

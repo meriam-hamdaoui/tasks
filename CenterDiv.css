@@ -1,0 +1,51 @@
+/* 2.	How to Center a Div Horizontally and Vertically in CSS? */
+
+/* 
+html code will be something like this
+<div className="parentDiv"><div className="childDiv>something...</div></div>
+ */
+
+/* using position property with margin negatif*/
+.parentDiv {
+  position: relative;
+}
+.childDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -35px 0 0 -35px;
+}
+
+/* using position + transform properties*/
+.parentDiv {
+  position: relative;
+}
+.childDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* using flexBox*/
+.parentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*or  */
+.parentDiv {
+  display: flex;
+  justify-content: center;
+}
+.childDiv {
+  align-self: center;
+}
+
+/* flexBox + margin auto */
+.parentDiv {
+  display: flex;
+}
+.childDiv {
+  margin: auto;
+}
